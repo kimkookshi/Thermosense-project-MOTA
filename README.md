@@ -40,7 +40,8 @@ This project blends **live weather data**, **simulated battery monitoring**, and
 <img src="Trend_Chart.png" alt="Battery vs Ambient trend chart" width="900">
 
 ### JSON Log Download
-<img src="JSON_Log_Download.png" alt="Exported JSON log example" width="900">
+<img src="JSON_Log_Download%20.png" alt="Exported JSON log example" width="900">
+
 
 
 ---
