@@ -1,0 +1,85 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+  background: #0b1220;
+  color: #e6edf6;
+}
+.app { max-width: 980px; margin: 24px auto; padding: 12px; }
+header { text-align: center; margin-bottom: 12px; }
+h1 { margin: 0; font-size: 28px; }
+.sub { margin: 4px 0 0; opacity: 0.8; }
+
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 16px 0; }
+.card {
+  background: #121a2b; border: 1px solid #1f2a44; border-radius: 12px;
+  padding: 14px; text-align: center;
+}
+.label { opacity: 0.8; margin: 0; }
+.value { font-size: 24px; margin: 6px 0 0; }
+
+.badge { display: inline-block; padding: 6px 10px; border-radius: 999px; font-weight: 700; }
+.badge.safe { background: #143a2e; color: #34d399; border: 1px solid #065f46; }
+.badge.caution { background: #3a2d14; color: #fbbf24; border: 1px solid #92400e; }
+.badge.danger { background: #3a141b; color: #fb7185; border: 1px solid #9f1239; }
+
+.meter { margin: 10px 0 20px; }
+.bar { background: #111827; border: 1px solid #1f2937; border-radius: 8px; height: 16px; overflow: hidden; }
+.fill { height: 100%; transition: width 0.4s ease; }
+.meter-labels { display: flex; justify-content: space-between; font-size: 12px; opacity: 0.8; margin-top: 6px; }
+
+.tip { background: #121a2b; border: 1px solid #1f2a44; border-radius: 12px; padding: 14px; }
+.tip h3 { margin: 0 0 6px; }
+.bullets { margin: 6px 0 0 18px; opacity: 0.9; }
+
+.chart { background: #121a2b; border: 1px solid #1f2a44; border-radius: 12px; padding: 12px; margin: 16px 0; }
+.controls { display: flex; gap: 10px; justify-content: center; margin: 10px 0 20px; }
+button {
+  background: #1f2a44; color: #e6edf6; border: 1px solid #334155; border-radius: 8px;
+  padding: 8px 12px; cursor: pointer;
+}
+button:hover { filter: brightness(1.1); }
+
+footer { text-align: center; opacity: 0.7; margin-top: 8px; }
+
+@media (max-width: 700px) {
+  .cards { grid-template-columns: 1fr; }
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
