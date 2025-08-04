@@ -24,8 +24,7 @@ This project blends **live weather data**, **simulated battery monitoring**, and
 
 ---
 
-## 📷 Demo Preview
-*(Add your screenshots here before submission)*  
+## 📷 Demo Preview 
 1. **Main Dashboard** – Current battery temp, ambient temp, and risk level.  
 2. **Danger Mode** – Shows how the UI alerts when the battery is overheating.  
 3. **Trend Chart** – See how temperature changes over time.  
