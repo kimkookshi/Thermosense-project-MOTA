@@ -30,6 +30,19 @@ This project blends **live weather data**, **simulated battery monitoring**, and
 3. **Trend Chart** – See how temperature changes over time.  
 4. **JSON Log Download** – Example of exported temperature history.
 
+### Main Dashboard
+<img src="main_dash_board.PNG" alt="ThermoSense main dashboard" width="900">
+
+### Danger Mode
+<img src="Danger_Mode.png" alt="Overheating alert - Danger mode" width="900">
+
+### Trend Chart
+<img src="Trend_Chart.png" alt="Battery vs Ambient trend chart" width="900">
+
+### JSON Log Download
+<img src="JSON_Log_Download.png" alt="Exported JSON log example" width="900">
+
+
 ---
 
 ## 📦 How to Run Locally
