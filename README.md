@@ -1,69 +1,70 @@
-# React + TypeScript + Vite
+# 🌡️ ThermoSense – Ambient-Aware Battery Health Advisor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ThermoSense is my personal project built to **keep batteries healthier and safer** by monitoring temperature in real time, comparing it with the surrounding environment, and instantly giving actionable tips to the user.  
 
-Currently, two official plugins are available:
+This project blends **live weather data**, **simulated battery monitoring**, and a **clean, interactive UI** — all running in the browser without any special hardware.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ What Makes It Special
+- 📊 **Real-Time Monitoring** – Battery temperature updates every few seconds, just like a live dashboard.
+- 🌍 **Ambient Weather Awareness** – Pulls actual weather temperature from your location to make smarter recommendations.
+- 🚦 **Instant Risk Levels** – Always tells you if your battery is in **SAFE**, **CAUTION**, or **DANGER** zone.
+- 💡 **Actionable Advice** – Gives practical steps to cool down or maintain healthy battery use.
+- 📈 **Beautiful Live Chart** – Custom SVG line chart to compare battery and ambient temperatures over the last few minutes.
+- 🎛 **Full Control** – Pause/resume monitoring, switch between °C and °F, and even download your battery log as a JSON file.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠 Built With
+- **React + TypeScript** – For a smooth, component-based UI.
+- **Vite** – For lightning-fast development and build.
+- **Custom SVG Charts** – No bulky libraries, just pure control over the visuals.
+- **Open-Meteo API** – To fetch live temperature data without requiring any API key.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📷 Demo Preview
+*(Add your screenshots here before submission)*  
+1. **Main Dashboard** – Current battery temp, ambient temp, and risk level.  
+2. **Danger Mode** – Shows how the UI alerts when the battery is overheating.  
+3. **Trend Chart** – See how temperature changes over time.  
+4. **JSON Log Download** – Example of exported temperature history.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 How to Run Locally
+```bash
+# Clone the repository
+git clone https://github.com/kimkookshi/Thermosense-project-MOTA.git
+cd Thermosense-project-MOTA
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+Now open http://localhost:5173 in your browser.
+
+🧠 How It Works
+Simulates Battery Temperature – Uses a heat/cooling model to mimic real-world battery behavior.
+
+Reads Ambient Weather – Gets your local temperature using the Open-Meteo API.
+
+Compares & Decides Risk Level – Uses a simple rule engine to determine if you’re safe or need action.
+
+Displays Advice & Trends – Shows clear visual cues and a line chart to track changes.
+
+🚀 Future Enhancements
+Connect to real mobile battery sensors.
+
+Use machine learning for predictive overheating alerts.
+
+Create a PWA (Progressive Web App) for mobile users.
+
+Add multi-day history and analytics.
+
+🙋 About Me
+I’m M Sree Ranjini, a tech enthusiast passionate about building practical, user-friendly solutions that combine data, design, and problem-solving. This project is part of my journey to sharpen my skills in modern frontend development and real-time data visualization.
+
+
